@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import imutils
 
-url='http://192.168.1.6:8080/shot.jpg'
+url='http://192.168.43.1:8080/shot.jpg'
 while True:
     imgPath = urllib.request.urlopen(url)
     imgNp = np.array(bytearray(imgPath.read()), dtype=np.uint8)
